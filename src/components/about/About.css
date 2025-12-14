@@ -1,0 +1,172 @@
+.abt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    }
+
+    .abt-left {
+    margin: 0 auto;
+    }
+
+    .abt-right {
+    margin: 0 auto;
+    justify-content: center;
+    width: 55%;
+    }
+
+    /* Profile Card */
+    .abt-card {
+    width: 400px;
+    height: 400px;
+    }
+
+    .abt-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0.5rem;
+    border-radius: 12px;
+    }
+
+    /* Buttons */
+    .abt-right .btn_shadow {
+    width: 130px;
+    margin-top: 2rem;
+    }
+
+    /* Subtitle */
+    .abt-sub {
+    color: #007bff; /* BLUE */
+    margin: 20px 0px;
+    font-weight: 600;
+    }
+
+    /* Description */
+    .abt-desc {
+    font-weight: 300;
+    margin: 10px auto;
+    color: #0f172a; /* SOFT BLACK */
+    }
+
+    .abt-right p {
+    font-size: 21px;
+    color: #0f172a; /* SOFT BLACK */
+    }
+
+    .abt .rsm {
+    font-size: 1rem;
+    }
+
+    #about .title {
+    margin-top: 3rem;
+    color: #000000; /* BLACK */
+    }
+
+    /* ================= MOBILE ABOUT ================= */
+
+    @media (max-width: 768px) {
+    .abt {
+        margin: 2rem 1rem;
+    }
+
+    .abt-card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .abt .title {
+        margin-top: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .abt-right .btn_shadow {
+        width: 6rem;
+        margin: 2rem auto;
+    }
+
+    .abt .rsm {
+        font-size: 0.8rem;
+    }
+
+    .abt-right {
+        width: 100%;
+    }
+
+    .abt-right p {
+        font-size: 16px;
+    }
+    }
+
+    /* ================= TIMELINE SECTION ================= */
+
+    .timeline {
+    margin: 5rem 0.5rem;
+    }
+
+    /* Timeline Title */
+    .timeline .title {
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: #000000; /* BLACK */
+    }
+
+    /* Timeline Card */
+    .timeline .vertical-timeline-element-content {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    padding: 1em 2em !important;
+    border-left: 4px solid #007bff; /* BLUE ACCENT */
+    border-radius: 8px;
+    }
+
+    /* Date */
+    .timeline .date {
+    color: #007bff; /* BLUE */
+    font-weight: 600;
+    }
+
+    /* Headings */
+    .timeline h3 {
+    padding-top: 0.25em;
+    color: #000000;
+    }
+
+    .timeline h5 {
+    color: #334155; /* DARK GREY */
+    }
+
+    /* Description */
+    .timeline .description {
+    margin: 1em 0;
+    font-size: 17px;
+    color: #1e293b; /* DARK SLATE */
+    }
+
+    /* ================= MOBILE TIMELINE ================= */
+
+    @media (max-width: 768px) {
+    .timeline .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: #007bff;
+        margin-top: 1.5em;
+        font-size: 12px;
+    }
+
+    .timeline h3 {
+        font-size: 16px;
+    }
+
+    .timeline h5 {
+        font-size: 14px;
+    }
+
+    .timeline .description {
+        font-size: 13px;
+    }
+}
