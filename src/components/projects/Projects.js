@@ -29,7 +29,7 @@ const Projects = () => {
                         />
                 })}
                 </div>
-            <a target="_blank" rel="noopener noreferrer" className="btn_shadow" href="https://github.com/Shashan-k08"><span>View All </span>
+            <a target="_blank" rel="noopener noreferrer" className="btn_shadow" href="https://github.com/amancoderhub?tab=repositories"><span>View All </span>
                 <i className="fas fa-chevron-right"></i>
             </a>
         </section>
