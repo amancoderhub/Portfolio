@@ -3,7 +3,7 @@ let recordApi = [
         id: 1,
         title: "SOFTPRO INDIA (P) Ltd.",
         link: "https://softproindia.in/",
-        location: "Full Stack Developer Intern (MERN) | Lucknow, India",
+        location: "Full Stack Developer Intern (MERN) |(Remote) Noida, India",
         desc1:
         "Developed and deployed a full-stack web application using React.js, Node.js, and Express.js, improving overall system performance by nearly 50%.",
         desc2:
@@ -18,7 +18,7 @@ let recordApi = [
         title: "Ajay Kumar Garg Engineering College",
         location: "Ghaziabad, Uttar Pradesh",
         desc1: "B.Tech in Computer Science & Engineering",
-        desc2: "CGPA: 7.98",
+        desc2: "CGPA: 8.05",
         date: "2023 – 2026",
         icon: "school",
     },

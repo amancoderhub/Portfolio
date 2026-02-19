@@ -7,12 +7,12 @@ import gfg from "../img/gfg.png";
 const Home = () => {
     const [text] = useTypewriter({
         words: [
-        " Full Stack Developer.",
+        " Backend Oriented-Full Stack Developer.",
         " MERN Stack Engineer.",
         " Competitive Programmer.",
         ],
         loop: 0,
-        onLoopDone: () => console.log(`loop completed after 3 runs.`),
+        onLoopDone: () => console.log(`loop completed after 2 runs.`),
     });
 
     return (

@@ -63,7 +63,7 @@ const Contact = () => {
                     <h1>Let’s Connect</h1>
                     <p>
                     I’m open to opportunities in{" "}
-                    <b>Full Stack / Software Development</b>.  
+                    <b>Full Stack / Software Development/Backend Developer</b>.  
                     Feel free to reach out for roles, projects, or collaboration.
                     </p>
 

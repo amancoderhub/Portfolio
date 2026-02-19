@@ -12,7 +12,7 @@ import {
     VerticalTimelineElement,
     } from "react-vertical-timeline-component";
     import "react-vertical-timeline-component/style.min.css";
-    import resume from "../img/Resume_Aman.pdf";
+    import resume from "../img/ResumeAmanSri.pdf";
 
     const Features = () => {
     const title_name = "< About me />";
@@ -39,8 +39,8 @@ import {
             <Fade direction="right" className="abt-right">
                 <div>
                 <p className="abt-sub">
-                    &emsp; I’m a passionate Full Stack Developer who loves turning
-                    ideas into scalable and user-friendly web applications.
+                    &emsp; I’m a passionate Backend Orientend Full Stack Developer who loves turning
+                    ideas into scalable and user-friendly web applications and love solving critical problem with practicing DSA & Algorithms.
                 </p>
 
                 <p className="abt-desc">
