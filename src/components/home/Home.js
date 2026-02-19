@@ -33,7 +33,7 @@ const Home = () => {
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/aman-shrivastav/"
+                    href="https://www.linkedin.com/in/aman-shrivastav-23295928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     title="LinkedIn"
                 >
                     <button className="btn_shadow">
