@@ -12,9 +12,33 @@
         width: 40%;
         margin: 4rem;
         height: fit-content;
+        background: #2a4657;
+        box-shadow: 5px 5px 15px rgba(153, 62, 62, 0.25);
+        border: 1px solid rgba(253, 253, 253, 0.05);
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+    }
+    .Contact .right:hover {
+        background: #273d51;
+        transform: translateY(-10px);
+        border-color: rgba(215, 216, 219, 0.2);
+        box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+        transition: 0.5s;
     }
     .Contact .box {
         padding: 20px;
+        background: #2a4657;
+        box-shadow: 5px 5px 15px rgba(153, 62, 62, 0.25);
+        border: 1px solid rgba(253, 253, 253, 0.05);
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+    }
+    .Contact .box:hover {
+        background: #273d51;
+        transform: translateY(-10px);
+        border-color: rgba(215, 216, 219, 0.2);
+        box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+        transition: 0.5s;
     }
     .Contact .details h1 {
         margin: 20px 0 20px 0;

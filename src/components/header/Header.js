@@ -10,46 +10,46 @@ const Header = () => {
 
     return (
         <>
-        <header className="header">
-        <div className="container d_flex">
-            <div className="logo">
-            portfolio <b>.</b>
-            </div>
-            <div className="navlink">
-            <ul
-                className={ismobile ? "nav-links-mobile" : "link f_flex uppercase"}
-            >
-                <li>
-                {" "}
-                <a href="#home">HOME</a>
-                </li>
-                <li>
-                {" "}
-                <a href="#about">ABOUT</a>
-                </li>
-                <li>
-                {" "}
-                <a href="#skill">SKILLS</a>
-                </li>
-                <li>
-                {" "}
-                <a href="#project">PROJECTS</a>
-                </li>
-                <li>
-                {" "}
-                <a href="#contact">CONTACT</a>
-                </li>
-            </ul>
-            <button className="toggle" onClick={() => setMobile(!ismobile)}>
-                {ismobile ? (
-                <i className="fas fa-times close home-btn"></i>
-                ) : (
-                <i className="fas fa-bars open"></i>
-                )}
-            </button>
-            </div>
-        </div>
-        </header>
+            <header className="header">
+                <div className="container d_flex">
+                    <div className="logo">
+                        portfolio <b>.</b>
+                    </div>
+                    <div className="navlink">
+                        <ul
+                            className={ismobile ? "nav-links-mobile" : "link f_flex uppercase"}
+                        >
+                            <li>
+                                {" "}
+                                <a href="#home">HOME</a>
+                            </li>
+                            <li>
+                                {" "}
+                                <a href="#about">ABOUT</a>
+                            </li>
+                            <li>
+                                {" "}
+                                <a href="#skill">SKILLS</a>
+                            </li>
+                            <li>
+                                {" "}
+                                <a href="#project">PROJECTS</a>
+                            </li>
+                            <li>
+                                {" "}
+                                <a href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                        <button className="toggle" onClick={() => setMobile(!ismobile)}>
+                            {ismobile ? (
+                                <i className="fas fa-times close home-btn"></i>
+                            ) : (
+                                <i className="fas fa-bars open"></i>
+                            )}
+                        </button>
+                    </div>
+                </div>
+            </header>
         </>
     );
 };

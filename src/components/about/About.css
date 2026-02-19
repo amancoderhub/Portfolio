@@ -32,13 +32,14 @@
 
     /* Buttons */
     .abt-right .btn_shadow {
-    width: 130px;
+    width: 10rem;
     margin-top: 2rem;
+    color: #ff014f;
     }
 
     /* Subtitle */
     .abt-sub {
-    color: #007bff; /* BLUE */
+    color: #ff014f; /* Accent */
     margin: 20px 0px;
     font-weight: 600;
     }
@@ -47,21 +48,19 @@
     .abt-desc {
     font-weight: 300;
     margin: 10px auto;
-    color: #0f172a; /* SOFT BLACK */
+    color: #c7d4e6; /* Light */
     }
 
     .abt-right p {
     font-size: 21px;
-    color: #0f172a; /* SOFT BLACK */
+    color: #c4cfde; /* Light */
     }
 
-    .abt .rsm {
-    font-size: 1rem;
-    }
+
 
     #about .title {
     margin-top: 3rem;
-    color: #000000; /* BLACK */
+    color: #e4e6ea; /* Light */
     }
 
     /* ================= MOBILE ABOUT ================= */
@@ -111,40 +110,49 @@
     font-size: 5rem;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    color: #000000; /* BLACK */
+    color: #e4e6ea; /* Light */
     }
 
     /* Timeline Card */
     .timeline .vertical-timeline-element-content {
-    background: #ffffff;
-    color: #000000;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    background: #2a4657;
+    color: #c4cfde;
+    box-shadow: 5px 5px 15px rgba(153, 62, 62, 0.25) !important;
     padding: 1em 2em !important;
-    border-left: 4px solid #007bff; /* BLUE ACCENT */
+    border-left: 4px solid #f7024b; /* Accent */
     border-radius: 8px;
+    border: 1px solid rgba(253, 253, 253, 0.05);
+    transition: 0.3s ease-in-out;
+    }
+    .timeline .vertical-timeline-element-content:hover {
+    background: #273d51;
+    transform: translateY(-10px);
+    border-color: rgba(215, 216, 219, 0.2);
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.4) !important;
+    transition: 0.5s;
     }
 
     /* Date */
     .timeline .date {
-    color: #007bff; /* BLUE */
+    color: #ff014f; /* Accent */
     font-weight: 600;
     }
 
     /* Headings */
     .timeline h3 {
     padding-top: 0.25em;
-    color: #000000;
+    color: #e4e6ea;
     }
 
     .timeline h5 {
-    color: #334155; /* DARK GREY */
+    color: #c4cfde; /* Light */
     }
 
     /* Description */
     .timeline .description {
     margin: 1em 0;
     font-size: 17px;
-    color: #1e293b; /* DARK SLATE */
+    color: #c4cfde; /* Light */
     }
 
     /* ================= MOBILE TIMELINE ================= */
@@ -153,7 +161,7 @@
     .timeline .vertical-timeline-element-date {
         display: block !important;
         float: none !important;
-        color: #007bff;
+        color: #ff014f;
         margin-top: 1.5em;
         font-size: 12px;
     }

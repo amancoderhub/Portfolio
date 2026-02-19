@@ -1,12 +1,12 @@
 body{
-    background-color:#f3f5f8 ;
+    background-color:#596574;
 }
 hr {
     margin: 0 auto;
     width: 90%;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(119, 124, 155, 0.75), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(138, 57, 57, 0), rgba(173, 178, 211, 0.75), rgba(174, 146, 146, 0));
     }
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');         
     /* ubuntu font from Google Fonts */
@@ -21,7 +21,8 @@ hr {
     }
     body{
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(234, 241, 243);
+    background-color: #1a2637;
+    color: #c4cfde;
     overflow-x: hidden;
     }
     .title {
@@ -44,7 +45,11 @@ hr {
     }
     a {
     text-decoration: none;         /* links looks nice */
-    color: black;
+    color: #c4cfde;
+    transition: 0.4s;
+    }
+    a:hover {
+      color: #ffffff;
     }
     li {
     /* removes list icon */
@@ -64,8 +69,15 @@ hr {
 
     .img-shadow{
     border-radius: 3%;
-    background: linear-gradient(145deg, #e9ecee, #fdfcfc);
-    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    background: #2b3035;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease-in-out;
+    }
+    .img-shadow:hover {
+         transform: translateY(-5px);
+         box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+         border-color: rgba(255, 255, 255, 0.2);
     }
     .circle {
     border-radius: 50%;
@@ -76,23 +88,32 @@ hr {
     border-radius: 6px;
     transition: 0.3s all ease;
     cursor: pointer;
-    color: #000;
+    color: #ffffff;
     transition: 0.5s;
     }
     .btn_shadow {
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    background: #2b3035;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #ffffff;
     }
     .btn_shadow:hover {
-    background: #00bfff;
+    background: #ffffff;
     /* background: linear-gradient(145deg, #6ab3e7, #f18686); */
-    color: white;
+    color: #17191c;
     transform: translateY(-10px);
     }
     .box_shadow {
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    background: #2b3035;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    }
+    .box_shadow:hover {
+        transform: translateY(-5px);
+        box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+        border-color: rgba(255, 255, 255, 0.2);
     }
     .row,
     .left,
@@ -106,7 +127,7 @@ hr {
     margin-top: 40px;
     }
     h1 {
-    color: #3c3e41;
+    color: #e4e6ea;
     }
     .grid {
     display: grid;
@@ -114,13 +135,13 @@ hr {
     grid-gap: 35px;
     }
     p {
-    color: #3c3e41;
+    color: #c4cfde;
     }
     .text-center {
     text-align: center;
     }
     .primary_color {
-    color: #00bfff;
+    color: #ffffff;
     }
     span {
     font-weight:bold;
@@ -132,8 +153,14 @@ hr {
     padding: 20px;
     border-radius: 5px;
     outline: none;
-    border: 3px solid #c1dff3;
+    border: 2px solid #1a1d23;
+    background-color: #202327;
+    color: #c4cfde;
     margin-bottom: 20px;
+    transition: 0.3s;
+    }
+    textarea:focus, input:focus {
+        border-color: #ffffff;
     }
     hr {
     margin: 0 auto;

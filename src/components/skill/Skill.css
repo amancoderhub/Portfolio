@@ -21,22 +21,29 @@
     margin: 1.5rem 2rem;
     padding: 10px;
     border-radius: 10px;
-    background: linear-gradient(145deg, #e9ecee, #fdfcfc);
-    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    background: #2a4657;
+    box-shadow: 5px 5px 15px rgba(153, 62, 62, 0.25);
+    border: 1px solid rgba(253, 253, 253, 0.05);
+    transition: 0.3s ease-in-out;
 }
 .skl-card:hover {
-    background: none;
+    background: #273d51;
     transform: translateY(-10px);
+    border-color: rgba(215, 216, 219, 0.2);
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
     transition: 0.5s;
 }
 .card-title {
     margin: 10px auto;
+    color: #eaeef5;
 }
 .skl-card ul{
     margin: 0 1rem;
 }
 .skl-card li{
     list-style:square;
+    color: #f3f8ff;
+    margin-bottom: 5px;
 }
 .skl-card img {
     height: 30vh;
