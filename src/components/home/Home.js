@@ -28,28 +28,28 @@ const Home = () => {
 
                 <div className="hero_btn d_flex">
                     <div className="col_1">
-                        <h4>FIND ME ON</h4>
+                        <h4>FIND ME ON</h4><br/>
                         <div className="button">
                             <a
+                                className="btn_shadow social-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://www.linkedin.com/in/aman-shrivastav-23295928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                                 title="LinkedIn"
+                                aria-label="Visit Aman Shrivastav's LinkedIn profile"
                             >
-                                <button className="btn_shadow">
-                                    <i className="fab fa-linkedin-in"></i>
-                                </button>
+                                <i className="fab fa-linkedin-in"></i>
                             </a>
 
                             <a
+                                className="btn_shadow social-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/amancoderhub"
                                 title="GitHub"
+                                aria-label="Visit Aman Shrivastav's GitHub profile"
                             >
-                                <button className="btn_shadow">
-                                    <i className="fab fa-github"></i>
-                                </button>
+                                <i className="fab fa-github"></i>
                             </a>
 
                             {/* <a
@@ -64,25 +64,25 @@ const Home = () => {
                 </a> */}
 
                             <a
+                                className="btn_shadow social-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://www.geeksforgeeks.org/user/aman_shrivastav/"
                                 title="GeeksforGeeks"
+                                aria-label="Visit Aman Shrivastav's GeeksforGeeks profile"
                             >
-                                <button className="btn_shadow">
-                                    <img src={gfg} alt="GeeksforGeeks" />
-                                </button>
+                                <img src={gfg} alt="" />
                             </a>
 
                             <a
+                                className="btn_shadow social-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://leetcode.com/u/AmanSri1761/"
                                 title="LeetCode"
+                                aria-label="Visit Aman Shrivastav's LeetCode profile"
                             >
-                                <button className="btn_shadow">
-                                    <img src={lt} alt="LeetCode" />
-                                </button>
+                                <img src={lt} alt="" />
                             </a>
                         </div>
                     </div>

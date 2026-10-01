@@ -35,6 +35,17 @@ const Features = () => {
                             />
                         </div>
                     </Fade>
+                    <br /><br />
+                    <div className="resume-container">
+                        <a
+                            className="btn_shadow rsm"
+                            href={resume}
+                            download="Aman_Shrivastav_Resume.pdf"
+                        >
+                            <b>Resume&nbsp;</b>
+                            <i className="fas fa-chevron-down" />
+                        </a>
+                    </div>
                 </div>
 
                 {/* About Me Content */}
@@ -81,11 +92,9 @@ const Features = () => {
                         </p>
 
                         <p className="abt-desc">
-                            I'm looking for opportunities in backend
-                            or full-stack development where I can
+                            I'm working as software enginner intern at CodeStore and also looking for new opportunities in software development where I can
                             contribute to meaningful projects, learn
-                            from experienced developers, and grow as
-                            an engineer.
+                            from experienced developers, and grow.
                         </p>
 
                         <a
@@ -93,22 +102,10 @@ const Features = () => {
                             href="mailto:saurbhsrivastav6@gmail.com"
                         >
                             Let's Connect
-                            <sup>
-                                <i className="fas fa-external-link-alt fa-xs" />
-                            </sup>
                         </a>
 
                         {/* Resume Download */}
-                        <div className="resume-container">
-                            <a
-                                className="btn_shadow rsm"
-                                href={resume}
-                                download="Aman_Shrivastav_Resume.pdf"
-                            >
-                                <b>Resume&nbsp;</b>
-                                <i className="fas fa-chevron-down" />
-                            </a>
-                        </div>
+
                     </div>
                 </Fade>
             </div>
