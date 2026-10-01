@@ -19,21 +19,3 @@ src/
   services/     # External API clients
 ```
 
-## Run locally
-
-```bash
-npm install
-npm start
-```
-
-## Verify production build
-
-```bash
-npm run build
-```
-
-## Run tests
-
-```bash
-npm test -- --watchAll=false
-```
