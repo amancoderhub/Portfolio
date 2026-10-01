@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import logo from "../img/profile2.png";
-import resume from "../img/resumeAmanSri.pdf";
+import resume from "../img/ResumeAmanSri.pdf";
 import { Fade } from "react-awesome-reveal";
 
 import recordApi from "./recordApi";

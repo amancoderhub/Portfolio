@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
-import resume from "../img/resumeAmanSri.pdf";
+import resume from "../img/ResumeAmanSri.pdf";
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);

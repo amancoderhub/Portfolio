@@ -18,4 +18,3 @@ src/
   hooks/        # Reusable React hooks
   services/     # External API clients
 ```
-
