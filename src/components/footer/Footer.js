@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
-import resume from "../img/ResumeAmanSri.pdf";
+import resume from "../img/resumeAmanSri.pdf";
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -60,8 +60,8 @@ const Footer = () => {
                         <h3>Quick Links</h3>
                         <ul>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#portfolio">Projects</a></li>
+                            <li><a href="#skill">Skills</a></li>
+                            <li><a href="#project">Projects</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -97,7 +97,7 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="copyright">
-                        © {new Date().getFullYear()} Aman Shrivastav. Made with <i className="fas fa-heart" style={{ color: '#ff014f' }}></i> and lots of coffee ☕
+                        © {new Date().getFullYear()} Aman Shrivastav. Made with <i className="fas fa-heart" style={{ color: '#ff014f' }}></i> and lots of coffee 
                     </div>
                     <div className="tech-stack">
                         Built with <span className="react">React.js</span>, <span className="node">Node.js</span>, and <span className="css">CSS</span>

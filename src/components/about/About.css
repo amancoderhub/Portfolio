@@ -63,8 +63,6 @@
     color: #e4e6ea; /* Light */
     }
 
-    /* ================= MOBILE ABOUT ================= */
-
     @media (max-width: 768px) {
     .abt {
         margin: 2rem 1rem;
@@ -155,7 +153,23 @@
     color: #c4cfde; /* Light */
     }
 
-    /* ================= MOBILE TIMELINE ================= */
+    /* About Section Links and Resume */
+    .hire-link {
+        color: #00bfff;
+        text-decoration: underline;
+    }
+
+    .resume-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .abt-right .btn_shadow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
 
     @media (max-width: 768px) {
     .timeline .vertical-timeline-element-date {

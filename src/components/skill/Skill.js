@@ -20,9 +20,10 @@ const Skill = () => {
                     <img className="img-shadow" src={frontend} alt="Frontend" />
                     <h2 className="card-title">Frontend</h2>
                     <ul>
+                    <li>Angular Js, Angular Material</li>
                     <li>React.js</li>
                     <li>HTML5, CSS3</li>
-                    <li>Tailwind CSS, Bootstrap</li>
+                    <li>Tailwind CSS, Bootstrap  </li>
                     <li>Responsive UI Design</li>
                     </ul>
                 </div>

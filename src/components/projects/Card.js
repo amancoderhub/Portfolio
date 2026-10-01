@@ -1,18 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Zoom } from "react-awesome-reveal";
 
 const Card = (props) => {
     const [modal, setModal] = useState(false);
+    const closeButtonRef = useRef(null);
 
-    const toggleModal = () => {
-        setModal(!modal);
-    };
+    const openModal = () => setModal(true);
+    const closeModal = () => setModal(false);
 
-    if (modal) {
+    useEffect(() => {
+        if (!modal) return undefined;
+
         document.body.classList.add("active-modal");
-    } else {
-        document.body.classList.remove("active-modal");
-    }
+        closeButtonRef.current?.focus();
+
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            document.body.classList.remove("active-modal");
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [modal]);
 
     function getday() {
         let options = {
@@ -40,8 +54,8 @@ const Card = (props) => {
                         </div>
                         {props.techStack && props.techStack.length > 0 ? (
                             <div className="tech-stack">
-                                {props.techStack.map((tech, index) => (
-                                    <span key={index} className="tech-tag">{tech}</span>
+                                {props.techStack.map((tech) => (
+                                    <span key={tech} className="tech-tag">{tech}</span>
                                 ))}
                             </div>
                         ) : (
@@ -79,7 +93,7 @@ const Card = (props) => {
                     </div>
 
                     <div className="card-footer">
-                        <button className="dtl-btn" onClick={toggleModal}>
+                        <button type="button" className="dtl-btn" onClick={openModal}>
                             View Details <i className="fas fa-arrow-right"></i>
                         </button>
                     </div>
@@ -88,12 +102,22 @@ const Card = (props) => {
 
             {/* Popup box */}
             {modal && (
-                <div className="modal">
-                    <div onClick={toggleModal} className="overlay"></div>
-                    <div className="modal-content">
+                <div className="modal" role="presentation">
+                    <button
+                        type="button"
+                        className="overlay"
+                        onClick={closeModal}
+                        aria-label="Close project details"
+                    ></button>
+                    <div
+                        className="modal-content"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="project-modal-title"
+                    >
                         <div className="modal-text right">
                             <p>Project-Card</p>
-                            <h1>{props.title}</h1>
+                            <h1 id="project-modal-title">{props.title}</h1>
                             <p>{props.details}</p>
 
                             {props.hostedUrl === "" || props.hostedUrl === null ? (
@@ -110,7 +134,6 @@ const Card = (props) => {
                                     </a>
                                 </p>
                             )}
-                            {/* <p>The project hosted link is available at the GitHub repository Readme, please head over there to view project.</p> */}
                             <p>
                                 <span>Pushed on :</span> {getday()}
                             </p>
@@ -144,7 +167,13 @@ const Card = (props) => {
                                     <i className="fab fa-github"></i> Repository
                                 </a>
                             </div>
-                            <button className="close-modal btn_shadow" onClick={toggleModal}>
+                            <button
+                                ref={closeButtonRef}
+                                type="button"
+                                className="close-modal btn_shadow"
+                                onClick={closeModal}
+                                aria-label="Close project details"
+                            >
                                 <i className="fas fa-times"></i>
                             </button>
                         </div>

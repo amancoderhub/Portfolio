@@ -52,6 +52,22 @@
         margin-right: 10px;
         font-weight: 600;
     }
+    .Contact .btn_shadow {
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        color: #ffffff;
+        transition: all 0.3s ease;
+    }
+    .Contact a.btn_shadow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: baseline;
+        justify-content: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
     .Contact .right {
         padding: 30px;
     }

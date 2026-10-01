@@ -30,12 +30,12 @@ const Contact = () => {
             )
             .then(
                 () => {
-                    alert("✅ Message sent successfully!");
+                    alert(" Message sent successfully!");
                     setData({ name: "", email: "", message: "" });
                 },
                 (error) => {
                     console.error(error);
-                    alert("❌ Failed to send message. Please try again.");
+                    alert(" Failed to send message. Please try again.");
                 }
             );
 

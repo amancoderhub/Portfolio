@@ -94,6 +94,7 @@ margin: 2rem;
     display: flex;
     gap: 6px;
     flex-wrap: wrap;
+    align-items: baseline;
     margin-left: 10px;
     justify-content: flex-end;
     max-width: 50%;
@@ -223,7 +224,15 @@ overflow-y: hidden;
 }
 
 .overlay {
-background-color: #ecf0f3;
+    background-color: #ecf0f3;
+    border: 0;
+    cursor: pointer;
+}
+
+.project-status {
+    margin: 2rem 0;
+    color: #cbd5e0;
+    text-align: center;
 }
 .modal-content {
     position: absolute;

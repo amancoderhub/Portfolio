@@ -1,136 +1,185 @@
 import React from "react";
 import "./About.css";
 import logo from "../img/profile2.png";
+import resume from "../img/resumeAmanSri.pdf";
 import { Fade } from "react-awesome-reveal";
 
-// Timeline Component
 import recordApi from "./recordApi";
 import { ReactComponent as WorkIcon } from "../img/work.svg";
 import { ReactComponent as SchoolIcon } from "../img/school.svg";
+
 import {
     VerticalTimeline,
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+
 import "react-vertical-timeline-component/style.min.css";
-import resume from "../img/ResumeAmanSri.pdf";
 
 const Features = () => {
-    const title_name = "< About me />";
     const workIconStyles = { background: "#06D6A0" };
     const schoolIconStyles = { background: "#f9c74f" };
 
     return (
-        <>
-            <section id="about">
-                <h1 className="title">{title_name}</h1>
-                <div className="abt">
-                    <div className="abt-left">
-                        <Fade direction="left">
-                            <div className="abt-card">
-                                <img
-                                    className="abt-img img-shadow circle"
-                                    src={logo}
-                                    alt="Aman Shrivastav"
-                                />
-                            </div>
-                        </Fade>
-                    </div>
+        <section id="about">
+            <h1 className="title">&lt; About me /&gt;</h1>
 
-                    <Fade direction="right" className="abt-right">
-                        <div>
-                            <p className="abt-sub">
-                                &emsp; I’m a passionate Backend Orientend Full Stack Developer who loves turning
-                                ideas into scalable and user-friendly web applications and love solving critical problem with practicing DSA & Algorithms.
-                            </p>
-
-                            <p className="abt-desc">
-                                &emsp; I specialize in building modern web products using{" "}
-                                <span>
-                                    MERN stack, clean UI design, optimized backend logic, and
-                                    performance-focused development
-                                </span>
-                                . With a strong foundation in DSA and CS fundamentals, I enjoy
-                                solving real-world problems and writing efficient, maintainable
-                                code.
-                            </p>
-
-                            <p className="abt-desc">
-                                &emsp; Currently pursuing B.Tech in CSE, I’ve worked on projects
-                                like AI chatbots, rental platforms, and healthcare systems.
-                                Looking to contribute my skills to a growth-oriented tech team.
-                                <br />
-                                <a
-                                    href="mailto:saurabhsrivastav6@gmail.com"
-                                    style={{ color: "#00bfff", textDecoration: "underline" }}
-                                >
-                                    Hire Me{" "}
-                                    <sup>
-                                        <i className="fas fa-external-link-alt fa-xs"></i>
-                                    </sup>
-                                </a>
-                            </p>
-
-                            <div style={{ display: "flex", justifyContent: "center" }}>
-                                <a
-                                    className="btn_shadow"
-                                    href={resume}
-                                    download="Aman_Shrivastav_Resume"
-                                    style={{
-                                        width: "10rem",
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
-                                        textDecoration: "none"
-                                    }}
-                                >
-                                    <b>Resume&nbsp;</b>
-                                    <i className="fas fa-chevron-down"></i>
-                                </a>
-                            </div>
+            <div className="abt">
+                {/* Profile Image */}
+                <div className="abt-left">
+                    <Fade direction="left">
+                        <div className="abt-card">
+                            <img
+                                className="abt-img img-shadow circle"
+                                src={logo}
+                                alt="Aman Shrivastav"
+                            />
                         </div>
                     </Fade>
                 </div>
 
-                {/* ---------------- Timeline ---------------- */}
-                <div className="timeline">
-                    <h1 className="title">Timeline</h1>
-                    <VerticalTimeline>
-                        {recordApi.map((element) => {
-                            let isWorkIcon = element.icon === "work";
+                {/* About Me Content */}
+                <Fade direction="right" className="abt-right">
+                    <div>
+                        <p className="abt-sub">
+                            I'm a Software Developer passionate about
+                            building reliable applications, solving
+                            real-world problems, and writing clean,
+                            maintainable code.
+                        </p>
 
-                            return (
-                                <VerticalTimelineElement
-                                    key={element.key}
-                                    date={element.date}
-                                    dateClassName="date"
-                                    iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-                                    icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-                                >
-                                    <h3 className="vertical-timeline-element-title">
-                                        {element.link ? (
-                                            <a href={element.link} style={{ color: "#00bfff" }}>
-                                                {element.title}{" "}
-                                                <sup>
-                                                    <i className="fas fa-external-link-alt fa-xs"></i>
-                                                </sup>
-                                            </a>
-                                        ) : (
-                                            element.title
-                                        )}
-                                    </h3>
-                                    <h5 className="vertical-timeline-element-subtitle">
-                                        {element.location}
-                                    </h5>
-                                    <p className="description">{element.desc1}</p>
-                                    <p className="description">{element.desc2}</p>
-                                    <p className="description">{element.desc3}</p>
-                                </VerticalTimelineElement>
-                            );
-                        })}
-                    </VerticalTimeline>
-                </div>
-            </section>
-        </>
+                        <p className="abt-desc">
+                            My primary interests are in{" "}
+                            <span>
+                                Backend Development, Node.js, Express.js,
+                                REST APIs, MongoDB, and authentication
+                            </span>
+                            . I also work with React.js and Angular to
+                            build full-stack applications that connect
+                            frontend interfaces with backend services.
+                        </p>
+
+                        <p className="abt-desc">
+                            During my internships, I've contributed to
+                            e-commerce and healthcare applications,
+                            integrating REST APIs, implementing
+                            authentication and role-based workflows,
+                            handling cart operations, and debugging
+                            application issues using Postman and
+                            browser developer tools. I've also
+                            collaborated with teams using Git and
+                            Azure DevOps.
+                        </p>
+
+                        <p className="abt-desc">
+                            My projects include an AI-powered chatbot,
+                            a healthcare management system, and a
+                            property rental platform. I enjoy exploring
+                            practical solutions, strengthening my
+                            problem-solving skills through Data
+                            Structures and Algorithms, and continuously
+                            learning new technologies.
+                        </p>
+
+                        <p className="abt-desc">
+                            I'm looking for opportunities in backend
+                            or full-stack development where I can
+                            contribute to meaningful projects, learn
+                            from experienced developers, and grow as
+                            an engineer.
+                        </p>
+
+                        <a
+                            className="hire-link"
+                            href="mailto:saurbhsrivastav6@gmail.com"
+                        >
+                            Let's Connect
+                            <sup>
+                                <i className="fas fa-external-link-alt fa-xs" />
+                            </sup>
+                        </a>
+
+                        {/* Resume Download */}
+                        <div className="resume-container">
+                            <a
+                                className="btn_shadow rsm"
+                                href={resume}
+                                download="Aman_Shrivastav_Resume.pdf"
+                            >
+                                <b>Resume&nbsp;</b>
+                                <i className="fas fa-chevron-down" />
+                            </a>
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+
+            {/* Timeline */}
+            <div className="timeline">
+                <h1 className="title">Timeline</h1>
+
+                <VerticalTimeline>
+                    {recordApi.map((element) => {
+                        const isWorkIcon = element.icon === "work";
+
+                        return (
+                            <VerticalTimelineElement
+                                key={element.id}
+                                date={element.date}
+                                dateClassName="date"
+                                iconStyle={
+                                    isWorkIcon
+                                        ? workIconStyles
+                                        : schoolIconStyles
+                                }
+                                icon={
+                                    isWorkIcon ? (
+                                        <WorkIcon />
+                                    ) : (
+                                        <SchoolIcon />
+                                    )
+                                }
+                            >
+                                <h3 className="vertical-timeline-element-title">
+                                    {element.link ? (
+                                        <a
+                                            href={element.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {element.title}
+                                            <sup>
+                                                <i className="fas fa-external-link-alt fa-xs" />
+                                            </sup>
+                                        </a>
+                                    ) : (
+                                        element.title
+                                    )}
+                                </h3>
+
+                                <h5 className="vertical-timeline-element-subtitle">
+                                    {element.location}
+                                </h5>
+
+                                {[
+                                    element.desc1,
+                                    element.desc2,
+                                    element.desc3,
+                                ]
+                                    .filter(Boolean)
+                                    .map((description, index) => (
+                                        <p
+                                            className="description"
+                                            key={index}
+                                        >
+                                            {description}
+                                        </p>
+                                    ))}
+                            </VerticalTimelineElement>
+                        );
+                    })}
+                </VerticalTimeline>
+            </div>
+        </section>
     );
 };
 
